@@ -7,3 +7,8 @@
 ## EDA
 1. Explore the relationship of the segment variable with other variables in the dataset
 ![Income line plot](/images/plot1.png)
+![Average Spending line plot](/images/plot2.png)
+
+2. Discover any presence of multicollinearity and its degree with a heatmap
+
+![Collinearity heatmap](/images/plot3.png)
