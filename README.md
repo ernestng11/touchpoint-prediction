@@ -11,4 +11,4 @@
 
 2. Discover any presence of multicollinearity and its degree with a heatmap
 
-![Collinearity heatmap](/images/plot3.png)
+             ![Collinearity heatmap](/images/plot3.png)
