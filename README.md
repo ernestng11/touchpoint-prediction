@@ -28,3 +28,15 @@ Y label: Most recent touchpoint
 ![Average spending dist plot](/images/plot12.png)
 
 4. One hot encode categorical variables
+
+## Model Building
+Multi-class classification approach: 
+
+1. Standardize/normalize numerical data
+
+2. Try baseline models: Logistic regression(OneVsAll), Multinomial NB, Random Forest, Adaboost, XGBoost
+
+3. Try neural networks: Simple NN with regularization(L1/L2/dropout) with Tensorflow
+
+## Deploy Model
+Using FlaskAPI
