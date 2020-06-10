@@ -5,5 +5,5 @@
 1. Check for missing values in every column
 2. Removed rows with no touchpoints value / nTouchpoints = 0
 ## EDA
-1. Plot distributions for each variable
-![GitHub Logo](/images/logo.png)
+1. Explore the relationship of the segment variable with other variables in the dataset
+![Income line plot](/images/plot1.png)
