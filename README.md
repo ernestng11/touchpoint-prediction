@@ -25,3 +25,5 @@
 ![Age distribution plot](/images/plot10.png)
 ![Income distribution plot](/images/plot11.png)
 ![Average spending dist plot](/images/plot12.png)
+
+### 4. One hot encode categorical variables
