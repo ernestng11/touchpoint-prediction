@@ -38,7 +38,10 @@ Multi-class classification approach:
 ![Income distribution plot](/images/plot14.png)
 ![Average spending dist plot](/images/plot15.png)
 
-2. Try baseline models: Logistic regression(OneVsAll), Multinomial NB, Random Forest, Adaboost, XGBoost
+2. Try baseline models:  XGBoost, Logistic regression(OneVsAll), Multinomial NB, Random Forest, Adaboost
+
+![mean logloss plot](/images/plot16.png)
+![mean error plot](/images/plot17.png)
 
 3. Try neural networks: Simple NN with regularization(L1/L2/dropout) with Tensorflow
 
