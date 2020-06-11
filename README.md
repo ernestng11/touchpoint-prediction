@@ -45,6 +45,8 @@ Multi-class classification approach:
 ![mean logloss plot](/images/plot16.png)
 ![mean error plot](/images/plot17.png)
 
+**Random Forest**
+
 3. Try neural networks: Simple NN with regularization(L1/L2/dropout) with Tensorflow
 
 ## Deploy Model
