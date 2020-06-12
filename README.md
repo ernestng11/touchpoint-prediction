@@ -52,6 +52,6 @@ Initial XGB model
 ![mean logloss plot](/images/plot16.png)
 ![mean error plot](/images/plot17.png)
 
-XGB model after tuning with *GridSearchCV*
+XGB model after tuning with *GridSearchCV* : max_depth, min_child_weight and reg_alpha
 
 ![mean logloss plot](/images/plot18.png)![mean error plot](/images/plot19.png)
