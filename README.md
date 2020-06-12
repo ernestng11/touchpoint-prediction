@@ -49,14 +49,10 @@ Multi-class classification approach:
 
 Initial XGB model
 
-XGBoost F1-Score (Micro): 0.9668271803103263
-
 ![mean logloss plot](/images/plot16.png)
 ![mean error plot](/images/plot17.png)
 
 XGB model after tuning 
-
-XGBoost F1-Score (Micro): 0.9678972712680578
 
 ![mean logloss plot](/images/plot18.png)
 ![mean error plot](/images/plot19.png)
