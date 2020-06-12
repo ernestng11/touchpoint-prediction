@@ -1,10 +1,13 @@
 # Aim: Based on a customer's profile, predict which type of touchpoint has the highest probability of resulting in a purchase
-X value: age, marital, segment, SocialMedia, income, creditRating, aveSpend, nTouchpoints
+Project overview:
+1. Created a tool to predict touchpoint for a customer based on their profiles
+2. Optimized Random Forest and XGBoost classifiers using GridSearchCV to get the best model
+3. Model made deployment ready with Pickle
 
-Y label: Most recent touchpoint
+
 ## Data Cleaning
 
-### 1. Check for missing values in every column
+### 1. Check for missing values in every column and drop duplicates
 
 ### 2. Removed rows with no touchpoints value / nTouchpoints = 0
 
@@ -33,19 +36,25 @@ Y label: Most recent touchpoint
 
 ### 4. One hot encode categorical variables
 
+For categorical variables, I made columns for each such that they are transformed into binary variables.
+
 ## Model Building
 
-Metrics for evaluating models: 
-1. Multiclass logloss since we are predicting the probabilities of the next touchpoint, I want to find the average difference between all probability distributions
-2. F1-Score(Micro) since we have imbalanced classes of labels
+**Metrics** for evaluating models: 
+1. Multiclass logloss since we are predicting the probabilities of the next touchpoint, I want to find the average difference between all probability distributions.
+2. F1-Score(Micro) since we have imbalanced classes of labels.
 
-### 1. Standardize/normalize numerical data
+### 1a. Standardize/normalize numerical data
 
 ![Age distribution plot](/images/plot13.png)
 ![Income distribution plot](/images/plot14.png)
 ![Average spending dist plot](/images/plot15.png)
 
-### 2. Try baseline ensemble model:  Random Forest
+### 1b. Stratified train test split
+
+I wrote a custom script to split my dataset into train, validation and test sets using the stratify strategy. Train size 80%, Validation set and Test set 10% each.
+
+### 2. Try baseline ensemble model:  **Random Forest**
 
 **Random Forest**
 
@@ -57,7 +66,7 @@ accuracy of 0.77688 which shows overfitting.
 
 Our RF Classifier seems to pay more attention to average spending, income and age. 
 
-### 3. Explore ensemble model: XGBoost
+### 3. Explore ensemble model: **XGBoost**
 
 
 **XGBoost**
@@ -83,4 +92,4 @@ I will pick the final XGBoost model since it gives significantly higher F1-score
 
 ## Model Deployment
 
-I included a pickle file for further deployment of the model into FlaskAPI in the future!
+I included a pickle file for further deployment of the model into FlaskAPI in the future! For productionization, a flask API endpoint can be hosted on a server and it will take in a list of values from a customer's profile and return the recommended touchpoint.
