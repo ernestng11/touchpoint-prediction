@@ -71,7 +71,7 @@ XGB model after tuning with *GridSearchCV* : max_depth, min_child_weight and reg
 
 ![mean logloss plot](/images/plot18.png)![mean error plot](/images/plot19.png)
 
-![FI](/images/plot20.png)
+![FI](/images/plot21.png)
 
 Our XGBoost model pays high attention to the 'unknown' marital status. This could be due to the fact that there are only 44 customers with 'unknown' marital status, hence to reduce bias, our xgb model assigns more weight to 'unknown' feature.
 
