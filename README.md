@@ -43,7 +43,9 @@ Multi-class classification approach:
 
 2. Try baseline classification model:  Logistic regression(OneVsRest)
 
-3. Explore ensemble model: XGBoost
+3. Explore ensemble model: Random Forest, XGBoost
+
+**Random Forest**
 
 **XGBoost**
 
