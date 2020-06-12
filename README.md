@@ -6,6 +6,7 @@ Project overview:
 3. Model made deployment ready with Pickle
 
 Workflow:
+
 data-cleaning_and_eda.ipynb -> model-building.ipynb
 
 ## Data Cleaning
