@@ -50,7 +50,7 @@ Initial XGB model
 ![mean logloss plot](/images/plot16.png)
 ![mean error plot](/images/plot17.png)
 
-XGB model after tuning with F1-score(Micro) metric using GridSearchCV
+XGB model after tuning with *GridSearchCV*
 
 ![mean logloss plot](/images/plot18.png)
 ![mean error plot](/images/plot19.png)
