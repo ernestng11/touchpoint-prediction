@@ -41,7 +41,9 @@ Multi-class classification approach:
 ![Income distribution plot](/images/plot14.png)
 ![Average spending dist plot](/images/plot15.png)
 
-2. Try baseline ensemble models:  XGBoost, Random Forest, Adaboost
+2. Try baseline classification model:  Logistic regression(OneVsRest)
+
+3. Explore ensemble model: XGBoost
 
 **XGBoost**
 
