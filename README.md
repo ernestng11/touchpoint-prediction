@@ -35,7 +35,9 @@ Y label: Most recent touchpoint
 
 ## Model Building
 
-Metrics for evaluating models: Multiclass logloss since we are predicting the probabilities of the next touchpoint, I want to find the average difference between all probability distributions
+Metrics for evaluating models: 
+1. Multiclass logloss since we are predicting the probabilities of the next touchpoint, I want to find the average difference between all probability distributions
+2. F1-Score(Micro) since we have imbalanced classes of labels
 
 ### 1. Standardize/normalize numerical data
 
