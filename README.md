@@ -55,7 +55,7 @@ accuracy of 0.77688 which shows overfitting.
 
 Our RF Classifier seems to pay more attention to average spending, income and age. 
 
-### 3. Explore ensemble model: Random Forest, XGBoost
+### 3. Explore ensemble model: XGBoost
 
 
 **XGBoost**
