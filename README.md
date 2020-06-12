@@ -1,9 +1,12 @@
 # Aim: Based on a customer's profile, predict which type of touchpoint has the highest probability of resulting in a purchase
+
 Project overview:
 1. Created a tool to predict touchpoint for a customer based on their profiles
 2. Optimized Random Forest and XGBoost classifiers using GridSearchCV to get the best model
 3. Model made deployment ready with Pickle
 
+Workflow:
+data-cleaning_and_eda.ipynb -> model-building.ipynb
 
 ## Data Cleaning
 
