@@ -54,5 +54,3 @@ XGB model after tuning with F1-score(Micro) metric using GridSearchCV
 
 ![mean logloss plot](/images/plot18.png)
 ![mean error plot](/images/plot19.png)
-
-F1-Score
