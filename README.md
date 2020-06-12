@@ -3,19 +3,23 @@ X value: age, marital, segment, SocialMedia, income, creditRating, aveSpend, nTo
 
 Y label: Most recent touchpoint
 ## Data Cleaning
+
 1. Check for missing values in every column
+
 2. Removed rows with no touchpoints value / nTouchpoints = 0
+
 ## EDA
-1. Explore the relationship of the segment variable with other variables in the dataset
+
+### 1. Explore the relationship of the segment variable with other variables in the dataset
 
 ![Income line plot](/images/plot1.png)
 ![Average Spending line plot](/images/plot2.png)
 
-2. Discover any presence of multicollinearity and its degree with a heatmap
+### 2. Discover any presence of multicollinearity and its degree with a heatmap
 
 ![Collinearity heatmap](/images/plot3.png)
 
-3. Visualizing distribution of variables with distribution plots and barplots
+### 3. Visualizing distribution of variables with distribution plots and barplots
 
 ![Marital plot](/images/plot4.png)
 ![Segment plot](/images/plot5.png)
@@ -27,13 +31,11 @@ Y label: Most recent touchpoint
 ![Income distribution plot](/images/plot11.png)
 ![Average spending dist plot](/images/plot12.png)
 
-4. One hot encode categorical variables
+### 4. One hot encode categorical variables
 
 ## Model Building
 
 Metrics for evaluating models: Multiclass logloss since we are predicting the probabilities of the next touchpoint, I want to find the average difference between all probability distributions
-
-Multi-class classification approach: 
 
 ### 1. Standardize/normalize numerical data
 
