@@ -41,11 +41,19 @@ Multi-class classification approach:
 ![Income distribution plot](/images/plot14.png)
 ![Average spending dist plot](/images/plot15.png)
 
-2. Try baseline classification model:  Logistic regression(OneVsRest)
+2. Try baseline ensemble model:  Random Forest
+
+**Random Forest**
+I picked RF Classifer simply because it runs fast and I am able to use GridSearchCV to iterate to the best model possible efficiently. 
+After initializing and tuning my RandomForestClassifier model with GridSearchCV, I got a train accuracy of 1.0 and test 
+accuracy of 0.77688 which shows overfitting.
+
+![FI](/images/plot20.png)
+
+Our RF Classifier seems to pay more attention to average spending, income and age. 
 
 3. Explore ensemble model: Random Forest, XGBoost
 
-**Random Forest**
 
 **XGBoost**
 
@@ -57,3 +65,7 @@ Initial XGB model
 XGB model after tuning with *GridSearchCV* : max_depth, min_child_weight and reg_alpha
 
 ![mean logloss plot](/images/plot18.png)![mean error plot](/images/plot19.png)
+
+![FI](/images/plot20.png)
+
+Our XGBoost model pays high attention to the 'unknown' marital status. This could be due to the fact that there are only 44 customers with 'unknown' marital status, hence to reduce bias, our xgb model assigns more weight to 'unknown' feature.
