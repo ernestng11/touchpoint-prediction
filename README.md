@@ -77,8 +77,8 @@ XGBoost Accuracy: 0.9678972712680578
 
 XGBoost F1-Score (Micro): 0.9678972712680578
 
-I will pick the final XGBoost model since it gives significantly higher F1-score and accuracy. We can also easily control overfitting by further tuning the reg_alpha value in our XGBClassifier().
+I will pick the final XGBoost model since it gives significantly higher F1-score and accuracy. We can also easily control overfitting by further tuning the reg_alpha value in our model.
 
 ## Model Deployment
 
-
+I included a pickle file for further deployment of the model into FlaskAPI in the future!
