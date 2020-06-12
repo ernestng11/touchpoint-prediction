@@ -52,5 +52,4 @@ Initial XGB model
 
 XGB model after tuning with *GridSearchCV*
 
-![mean logloss plot](/images/plot18.png)
-![mean error plot](/images/plot19.png)
+![mean logloss plot](/images/plot18.png) ![mean error plot](/images/plot19.png)
