@@ -1,4 +1,4 @@
-# Aim: Based on a customer's profile, predict which type of touchpoint is most likely to result in a purchase
+# Aim: Based on a customer's profile, predict which type of touchpoint has the highest probability of resulting in a purchase
 X value: age, marital, segment, SocialMedia, income, creditRating, aveSpend, nTouchpoints
 
 Y label: Most recent touchpoint
@@ -30,6 +30,9 @@ Y label: Most recent touchpoint
 4. One hot encode categorical variables
 
 ## Model Building
+
+Metrics for evaluating models: Multiclass logloss since we are predicting the probabilities of the next touchpoint, I want to find the average difference between all probability distributions
+
 Multi-class classification approach: 
 
 1. Standardize/normalize numerical data
